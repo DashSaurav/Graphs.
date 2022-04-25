@@ -1,3 +1,4 @@
+## importing necessary libraries.
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,13 +7,14 @@ import calendar
 import datetime as dt
 import streamlit as st
 from PIL import Image
+# this set_page_config()--> always go first 
 st.set_page_config(page_title="Heatmap")
 
 
 data = pd.read_csv("from_func_on_new_inputs_1.csv")
 pd.options.display.width = 0
 #print(data)
-
+#different forms of datetime data is acceptable,,, check format before using.
 def event_time_to_day(event_time):
    #return dt.datetime.strptime(event_time, '%d-%m-%Y').day
    return dt.datetime.strptime(event_time, '%Y-%m-%d').day
@@ -26,7 +28,6 @@ def event_time_to_year(event_time):
    return dt.datetime.strptime(event_time, '%Y-%m-%d').year
 
 def event_time_to_hour(event_time):
-   #return dt.datetime.strptime(event_time, '%H:%M:%S').hour
    return dt.datetime.strptime(event_time, '%H:%M:%S').hour
 
 
@@ -37,6 +38,7 @@ data['day'] = data['Date'].apply(lambda event_datetime: event_time_to_day(event_
 data['Floor_Cleaning_Start_Time'].replace(['0',''], '00:00:00', inplace=True)
 data['Hour'] = data['Floor_Cleaning_Start_Time'].apply(lambda event_datetime: event_time_to_hour(event_datetime))
 
+#making a statics list of weekdays.
 weekdays =['Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat', 'Sun']
 
 def calculate_weekday(day, month, year):
