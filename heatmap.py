@@ -8,7 +8,11 @@ import datetime as dt
 import streamlit as st
 from PIL import Image
 # this set_page_config()--> always go first 
-st.set_page_config(page_title="Heatmap")
+st.set_page_config(page_title="Heatmap", page_icon=":shark", menu_items={
+         'Get Help': 'https://www.extremelycoolapp.com/help',
+         'Report a bug': "https://www.extremelycoolapp.com/bug",
+         'About': "# This is a header. This is an *extremely* cool app!"
+     })
 
 
 data = pd.read_csv("from_func_on_new_inputs_1.csv")
