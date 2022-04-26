@@ -6,3 +6,12 @@ In here it is an Streamlit file. Run using Termainal </br><b>streamlit run heatm
   </br><b> Problem Statement</b>
   </br>
   1. Create Heatmap for Time_data from a excel/csv file to get insights about the occupancy values.
+  2. In x-axis keep weekdays like :- mon,tue,etc.
+  3. Convert Time_data as hourly basis, and only take Hour value from Time_data.
+  4. Save it as a image file.
+</br>
+<b>Additional Insights added.</b>
+</br>
+1. Showing graph in streamlit application.
+2. Addition of Date filters in aplication.
+3. Styling of Application.
