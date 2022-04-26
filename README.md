@@ -12,6 +12,6 @@ In here it is an Streamlit file. Run using Termainal </br><b>streamlit run heatm
 </br>
 <b>Additional Insights added.</b>
 </br>
-1. Showing graph in streamlit application.
-2. Addition of Date filters in aplication.
+1. Showing graph in streamlit application.</br>
+2. Addition of Date filters in aplication.</br>
 3. Styling of Application.
