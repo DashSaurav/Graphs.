@@ -10,7 +10,8 @@ In here it is an Streamlit file. Run using Termainal </br><b>streamlit run pytho
   3. Convert Time_data as hourly basis, and only take Hour value from Time_data.
   4. Save it as a image file.
   5. And show it in Front-End using Streamlit.
-</br><b> Problem Statement for 31x24 heatmap</b>
+</br>
+<b>Problem Statement for 31x24 heatmap</b>
 </br>
 1. Show data of occupancy from csv/excel file on Room basis.</br>
 2. And plot the graph in Streamlit with the help of user-defined function.</br>
