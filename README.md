@@ -12,7 +12,7 @@ In here it is an Streamlit file. Run using Termainal </br><b>streamlit run pytho
   5. And show it in Front-End using Streamlit.
 </br><b> Problem Statement for 31x24 heatmap</b>
 </br>
-1. Show data of occupancy from csv/excel file on Room basis.
-2. And plot the graph in Streamlit with the help of user-defined function.
-3. Keep Threshold for different colours in heatmap.
+1. Show data of occupancy from csv/excel file on Room basis.</br>
+2. And plot the graph in Streamlit with the help of user-defined function.</br>
+3. Keep Threshold for different colours in heatmap.</br>
 
