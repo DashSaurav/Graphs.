@@ -16,4 +16,8 @@ In here it is an Streamlit file. Run using Termainal </br><b>streamlit run pytho
 1. Show data of occupancy from csv/excel file on Room basis.</br>
 2. And plot the graph in Streamlit with the help of user-defined function.</br>
 3. Keep Threshold for different colours in heatmap.</br>
-
+</br>
+<b>Problem Statement for Line Chart</b></br>
+1. Show the occupancy in Line Chart for every 2 mins of data.</br>
+2. Keep threshold Lines in the Graph.</br>
+3. Give an interactive user Selection for Dates and Threshold Values.</br>
