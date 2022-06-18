@@ -6,6 +6,8 @@ data = {'Column1':['True', 'False', 'True', 'True'],
         'Column2':['True', 'False', 'False', 'True'],
         'Column3':['True', 'False', 'True', 'True']}
 df = pd.DataFrame(data)
+# if suppose we need to pass only the last row value and need to have a indicator graph...then just pass the last row of data to the graph.
+lst_row_data = df.tail(1)
 
 def make_graph(df):
     # df will be the csv file from where we are selecting data in tru false format.
@@ -25,4 +27,5 @@ def make_graph(df):
     plt.legend(bbox_to_anchor=(0.9, 1))
     plt.savefig("graph.png")
 
-make_graph(df)
+make_graph(df) # getting the graph for whole dataset.
+make_graph(lst_row_data) # getting an indicator graph
