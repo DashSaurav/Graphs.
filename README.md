@@ -21,3 +21,7 @@ In here it is an Streamlit file. Run using Termainal </br><b>streamlit run pytho
 1. Show the occupancy in Line Chart for every 2 mins of data.</br>
 2. Keep threshold Lines in the Graph.</br>
 3. Give an interactive user Selection for Dates and Threshold Values.</br>
+</br><b> Real Time Graph</b></br>
+1. Show Change in graph at a particular interval.</br>
+2. Used autorefresher componenet for achiving this.</br>
+3. Used metric for shwoing real time value and then rendring the graph at a real time basis.</br>
